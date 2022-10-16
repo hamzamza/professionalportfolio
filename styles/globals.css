@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html{
+  scroll-behavior: smooth;
+}
+
+.growingup{
+  animation: growingup 2.1s ease;
+}
+.vertical-text{
+  writing-mode: vertical-rl;
+text-orientation: mixed;
+}
+.themchange{
+  transition: .6s;
+}
+*{
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.animate-spin-1{
+animation: spin 1s  ease-out;
+}
+
+@keyframes growingup {
+  0%{
+    transform: scale(1.5) ;
+    opacity: 1;
+  }
+  60% {
+   transform: scale(1);
+ 
+   opacity: 1;
+  }
+  80%{
+    opacity: 0;
+  }
+  100%{
+    transform: scale(30);
+    opacity: 0;
+   
+  }
+
+}
+@keyframes spin {
+  0%,100% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(360deg);
+  }
+
+}
+body{
+  
+  font-family: "burtons";
+}
+.img-container{
+  overflow: visible;
+
+
+}
+
+.imgwrapper{
+
+}
+.img-container:hover .imgwrapper{
+  transform: translateX(-100%);
+  transition: .5s;
+}
+@font-face {
+  font-family: "burtons";
+  src: url("../public/Burtons.otf");
+}
