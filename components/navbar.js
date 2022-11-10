@@ -11,7 +11,7 @@ function Navbar({them,setDarkmod}) {
           }
         >
           <div className="relative w-12 h-12  lg:w-20 lg:h-20">
-          <Image src={"/../public/logo.png"} layout="fill" />
+          <Image src={"/logo.png"} layout="fill" />
           </div>
         </div>
         </Link>

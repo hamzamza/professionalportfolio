@@ -8,14 +8,14 @@ import Navbar from "../../components/navbar";
 import Sidebar from "../../components/sidebar";
 
 function Mywork() {
-    const {darkmodOn  , setDarkmod} =  useContext(DarkmodContext)
+    const {darkmodOn , setDarkmod} =  useContext(DarkmodContext)
     const [loaing , setloading] = useState(true);
-    useEffect(()=>{
-      setloading(true)
-      setTimeout(() => {
-        setloading(false)
-      }, 200);
-    },[])
+      useEffect(()=>{
+        setloading(true)
+        setTimeout(() => {
+          setloading(false)
+        }, 200);
+      },[])
 
     const them = (lightmod, darkmod) => {
         if (darkmodOn) return darkmod;
