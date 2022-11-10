@@ -119,7 +119,7 @@ export default function Root({ period }) {
 
   ];
   const text = [
-    " I got my bacaloria degree in 2019 physic option . in this period i was interested about maths and physics and from "+
+    " I got my bacaloria degree in  physics option . in this period i was interested about maths and physics and from "+
     "time to time i play some vedio games , for that reasen i was always asking my self how do they works but i wasn't that match interested   ",
 
     "2022 I took the most important step in my life , i passed the ENSA concour and i get my place on it , then my life start "+
@@ -219,7 +219,7 @@ export default function Root({ period }) {
                 </p>
                 <div className="imgwrapper  md:absolute md:top-0 md:right-0 md:left-0 md:buttom-0} ">
                   <Image
-                    src={"/../public/image.jpg"}
+                    src={"/image.jpg"}
                     width={300}
                     height={300}
                     className=" object-cover"
@@ -342,7 +342,7 @@ export default function Root({ period }) {
               </div>
               <div className="  flex-1 relative hidden lg:block rounded-md overflow-hidden">
                 <Image
-                  src={"/../public/backgound.jpg"}
+                  src={"/backgound.jpg"}
                   layout="fill"
                   className=" h-full w-full object-cover"
                 />
